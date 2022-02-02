@@ -50,5 +50,5 @@ int main()
 3. can be involed wothout help of any object
 4. usually contains the object  as argument 
 5. can be declared inside ublic or private section of class.
-
+6. it can not access the member directly by the name and need object_name.member_name to access any member.
 */

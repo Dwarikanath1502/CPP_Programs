@@ -12,22 +12,19 @@ public:
         return (a + b);
     }
 
-    int sumRealComplex(Complex , Complex );
-    int sumCompComplex(Complex , Complex );
-
-
-
+    int sumRealComplex(Complex, Complex);
+    int sumCompComplex(Complex, Complex);
 };
 
-class Complex 
+class Complex
 {
     int a, b;
-    //Individually declaring function as friend
+    // Individually declaring function as friend
 
     // friend int Calculator ::sumRealComplex(Complex o1, Complex o2);
     // friend int Calculator ::sumCompComplex(Complex o1, Complex o2);
 
-    //Declaring the entire class as friend
+    // Declaring the entire class as friend
     friend class Calculator;
 
 public:
@@ -46,7 +43,6 @@ int Calculator ::sumRealComplex(Complex o1, Complex o2)
 {
     return (o1.a + o2.a);
 }
-
 
 int Calculator ::sumCompComplex(Complex o1, Complex o2)
 {
