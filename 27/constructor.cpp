@@ -15,7 +15,7 @@ public:
     }
 };
 
-Complex::Complex(void)  //this is a default constructor as it don't take any parameter
+Complex::Complex(void)  //this is a default constructor as it don't accepts any parameter
 {
     a = 0;
     b = 0;
