@@ -21,11 +21,13 @@ public:
 class Programmer : Employee
 {
 public:
+int languageCode;
     Programmer(int inpid)
     {
         id = inpid;
+     languageCode = 9;
+
     }
-    int languageCode = 9;
     void getData(){
         cout<<id<<endl;
     }
