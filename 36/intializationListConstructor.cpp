@@ -34,6 +34,5 @@ public:
 int main()
 {
     Test t(4,6);
-    
     return 0;
 }

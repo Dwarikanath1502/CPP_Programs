@@ -1,4 +1,3 @@
-
 #include <iostream>
 using namespace std;
 
@@ -9,6 +8,7 @@ Test --> result
 sports --> result
 */
 
+// Base class Student
 class Student
 {
 protected:
@@ -25,6 +25,7 @@ public:
     }
 };
 
+// Base test class
 class Test : virtual public Student
 {
 protected:
@@ -44,6 +45,7 @@ public:
     }
 };
 
+// base class Sports
 class Sports : virtual public Student
 {
 protected:
@@ -56,20 +58,23 @@ public:
     }
     void printScore(void)
     {
-        cout << "Your PT score is: " << score<<endl;
+        cout << "Your sports score is: " << score << endl;
     }
 };
 
+// base class result
 class Result : public Test, public Sports
 {
     float total;
-    public:
-    void display(void){
+
+public:
+    void display(void)
+    {
         total = maths + physics + score;
         printNumber();
         printMarks();
         printScore();
-        cout<<"Your total score is : "<<total<<endl;
+        cout << "Your total score is : " << total << endl;
     }
 };
 
