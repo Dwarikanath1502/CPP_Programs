@@ -5,6 +5,7 @@ int main()
 {
     int a = 15;
     int *ptr = &a;
+    // int **ptr1 = &ptr;
     cout << "The value of a is " << *(ptr) << endl; // this is called deferencing, it gives value that is stored at that address.
 
     // new operator
