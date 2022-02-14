@@ -4,13 +4,15 @@ using namespace std;
 
 int main(){
     string s = "Dwarikanath";
-    // writing to a file
+    // it create a file and write to a file
     // ofstream out("sample.txt");
     // out<<s;
 
     //reading from file
     ifstream in("sample.txt");
-    in>>s;
+    // in>>s;
+    getline(in, s);
     cout<<s<<endl;
+    in.close();
     return 0;
 }
